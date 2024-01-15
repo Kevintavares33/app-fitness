@@ -3,10 +3,17 @@ import React from 'react';
 
 export default function _layout() {
   return (
-    <Stack 
+    <Stack
      screenOptions={{
           headerShown: false
      }}
-     />
+    >
+      <Stack.Screen name="exercises" option={{
+        presentation: 'fullScreenModal'
+      }}/>
+      
+    </Stack>
+
+  
   )
 }

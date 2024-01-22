@@ -21,7 +21,7 @@ const apiCall = async (url, params)=>{
     }
 }
 
-export const fetchExercisesByBodypart = async (bodyParts)=>{
+export const fetchExercisesByBodyPart = async (bodyParts)=>{
     let data = await apiCall(baseUrl+`/exercises/bodyPart/${bodyParts}`);
     return data;
 }

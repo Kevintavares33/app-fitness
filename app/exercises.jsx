@@ -24,7 +24,7 @@ export default function Exercises() {
         setExercises(data);
     }
   return (
-    <ScrollView>
+    <ScrollView className="bg-black">
         <StatusBar style="light" />
         <Image 
             source={item.image}
@@ -33,16 +33,16 @@ export default function Exercises() {
         />
         <TouchableOpacity
             onPress={()=> router.back()}
-            className="bg-rose-500 mx-4 absolute flex justify-center items-center pr-1 rounded-full"
+            className="bg-black mx-4 absolute flex justify-center items-center pr-1 rounded-full"
             style={{height: hp(5.5), width: hp(5.5), marginTop: hp(7)}}
         >
-                 <Ionicons name="caret-back-outline" size={hp(4)} color="white" />
+                 <Ionicons name="caret-back-outline" size={hp(4)} color="green" />
         </TouchableOpacity>
 
         {/* exercises */}
         <View className="mx-4 space-y-3 mt-4">
-            <Text style={{fontSize: hp(3)}} className="font-semibold text-neutral-700">
-                {item.name} exercises
+            <Text style={{fontSize: hp(3)}} className="font-semibold text-neutral-200">
+            Exercises
             </Text>
             <View className="mb-10">
                 <ExerciseList data={exercises} />

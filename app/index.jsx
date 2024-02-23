@@ -23,7 +23,7 @@ export default function Index() {
        >
         <Animated.View entering={FadeInDown.delay(100).springify()} className="flex items-center">
             <Text style={{fontSize: hp(5)}} className="text-white font-bold tracking-wide">
-                Best <Text className="text-rose-500">Workouts</Text>
+                Best <Text className="text-green-500">Workouts</Text>
             </Text>
             <Text style={{fontSize: hp(5)}} className="text-white font-bold tracking-wide">
                 For You
@@ -34,7 +34,7 @@ export default function Index() {
             <TouchableOpacity
                 onPress={()=> router.push('home')}
                 style={{height: hp(7), width: wp(80)}}
-                className="bg-rose-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
+                className="bg-green-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
             >
                 <Text style={{fontSize: hp(3)}} className="text-white font-bold tracking-widest">
                     Get Started

@@ -5,11 +5,11 @@ import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import BodyParts from '../components/BodyParts';
-import ImageSlider from '../components/ImageSlider';
+import ImageSlider from '../components/Imageslider';
 
 export default function Home() {
   return (
-    <SafeAreaView className="flex-1 bg-white flex space-y-5" edges={['top']}>
+    <SafeAreaView className="flex-1 bg-black flex space-y-5" edges={['top']}>
       <StatusBar style="dark" />
 
       {/* punchilne and avatar */}
@@ -17,13 +17,13 @@ export default function Home() {
         <View className="space-y-2">
             <Text
                 style={{fontSize: hp(4.5)}}
-                className="font-bold tracking-wider text-neutral-700"
+                className="font-bold tracking-wider text-neutral-200"
             >
                 READY TO
             </Text>
             <Text
                 style={{fontSize: hp(4.5)}}
-                className="font-bold tracking-wider text-rose-500"
+                className="font-bold tracking-wider text-green-500"
             >
                 WORKOUT
             </Text>
@@ -36,15 +36,14 @@ export default function Home() {
                 className="rounded-full"
             />
             <View 
-                className="bg-neutral-200 rounded-full flex justify-center items-center border-[3px] border-neutral-300"
+                className="bg-black rounded-full flex justify-center items-center border-[3px] border-neutral-300"
                 style={{height: hp(5.5), width: hp(5.5)}}
             >
-                <Ionicons name="notifications" size={hp(3)} color="gray" />
+                <Ionicons name="notifications" size={hp(3)} color="green" />
             </View>
         </View>
       </View>
 
-      {/* image slider */}
       <View>
         <ImageSlider />
       </View>

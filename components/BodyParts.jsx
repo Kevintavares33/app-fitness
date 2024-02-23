@@ -9,7 +9,7 @@ export default function BodyParts() {
     const router = useRouter()
   return (
     <View className="mx-4">
-      <Text style={{fontSize: hp(3)  }} className="font-semibold text-neutral-700">
+      <Text style={{fontSize: hp(3)  }} className="font-semibold text-neutral-200">
         Exercises
       </Text>
     
@@ -52,7 +52,7 @@ const BodyPartCard = ({item, router, index})=>{
 
                 <Text
                     style={{fontSize: hp(2.3)}}
-                    className="text-white font-semibold text-center tracking-wide"
+                    className="text-white font-semibold text-center tracking-wide uppercase"
                 >
                     {item?.name}
                 </Text>
